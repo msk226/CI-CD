@@ -1,5 +1,4 @@
  name: CD with Gradle
-	
  # 언제 이 파일의 내용이 실행될 것인지 정의합니다. 
  # 여기서는 main 브랜치에 코드가 push 되거나 pull_request되었을 때 실행할 것을 말하고 있습니다.
  on:
@@ -16,7 +15,6 @@
  jobs:
    build:
      runs-on: ubuntu-latest # ubuntu 최신 버전에서 script를 실행
-
    steps:
    # 지정한 저장소(현재 REPO)에서 코드를 워크플로우 환경으로 가져오도록 하는 github action
    - uses: actions/checkout@v3
